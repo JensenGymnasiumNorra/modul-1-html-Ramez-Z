@@ -19,15 +19,73 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 -->
 
 <!DOCTYPE html>
-<html>
-
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Test Form</title>
 </head>
 
 <body>
+    <h1>Testformulär</h1>
 
+    <form action="tack.html" method="get" target="_blank">
+
+        <legend class="skapare">Vem skapade detta formulär?</legend>
+        <label for="textfält">Han heter...</label>
+        <input type="text" name="skapare" value="Ramez Zariab"><br><br>
+
+        <fieldset>
+            <legend>Vad är ditt kön:</legend>
+            <label><input type="radio" name="kön" value="Man">Man</label>
+            <label><input type="radio" name="kön" value="Kvinna">Kvinna</label>
+            <label><input type="radio" name="kön" value="Annat">Annat</label>
+        </fieldset>
+<br>
+        <label for="text">Namn</label><br>
+        <input type="text" name="name" placeholder="Skriv ditt namn"><br><br>
+
+        <label for="password">Lösenord</label><br>
+        <input type="password" name="password" placeholder="Skriv ditt lösenord"><br><br>
+
+        <fieldset>
+            <legend>Vad är din favorit spel genre</legend>
+            <label><input type="checkbox" name="genre" value="action"> Action</label>
+            <label><input type="checkbox" name="genre" value="Adventure"> Adventure</label>
+            <label><input type="checkbox" name="genre" value="Strategy"> Strategy</label>
+            <label><input type="checkbox" name="genre" value="RPG"> RPG</label>
+            <label><input type="checkbox" name="genre" value="Simulation"> Simulation</label>
+            <label><input type="checkbox" name="genre" value="Sports"> Sports</label>
+            <label><input type="checkbox" name="genre" value="Puzzle"> Puzzle</label>
+            <label><input type="checkbox" name="genre" value="Other"> Other</label>
+        </fieldset>
+        
+        <br>
+
+        <label for="select">Vad är din favorit färg?</label><br>
+
+        <select name="colour" id="select">
+            <option value="Red">Red</option>
+            <option value="Not-Red">Not Red</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Skicka...Perchance?">
+    </form>
+    <style>
+        fieldset{
+            width : 200px
+        }
+        fieldset label {
+            display: block;
+            padding: 5px;
+        }
+        select{
+            margin-top: 5px;
+        }
+        .skapare{
+            margin-bottom: 5px;
+        }
+    </style>
 </body>
-
 </html>
