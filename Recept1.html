@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pankakor</title>
+
+<!--Titel till webbsidan (flik)-->
+
+        <style>
+            .gold{
+                background-color: goldenrod; display: inline-block; 
+            }
+            .yellow{
+                background-color: rgb(255,255,116); padding: 10px;
+            }
+            input[type="submit"]{
+                cursor: pointer;
+                border-radius: 10px;
+                padding: 5px;
+            }
+            input[type="submit"]:hover{
+                background-color: darkgray;
+                font-size: 13px;
+            }
+        </style>
+
+<!-- Stil för hela sidan -->
+
+    </head>
+    <body style="background-color: yellow;">
+        
+        <div class="header" style="background-color: rgb(255, 255, 116); height: 60px;" >
+            
+            <h1 align="center">Pankakor</h1>
+            
+            <form action="receptsida.html" method="get" align="center" style="margin-top: 30px;">
+                <input type="submit" value="Tillbaka hem">
+            </form>
+            
+        </div>
+        
+<!--Skapade en header samt rubrik-->
+
+        <br>
+
+        <div style="display: flex; gap: 10px; margin: 5px; margin-top: 30px;">
+        
+            <div class="yellow" style="flex:1;" align="center">
+                <h2 class="gold">Vad gör dessa pankakor så spektakulära?</h2>
+                <p class="gold">Dessa pannkakor är otroligt goda och <span style="color: gold;">gyllene</span>, med en perfekt balans mellan sötma och lätt sälta. Den hemliga ingrediensen är en klick vanilj som gör dem extra söta, och serverade med färska bär och sirap blir de nästan magiska på tallriken!</p>
+            </div>
+
+            <div class="yellow" style="flex:1;" align="center">
+                <h2 class="gold">Hur det har hjälpt mig.</h2>
+                <p class="gold">Att laga dessa pannkakor har gjort frukoststunden både roligare och snabbare. Jag har lärt mig att balansera smakerna bättre, experimentera med ingredienser och känna stolthet över något jag själv skapat samtidigt som familjen får njuta av en riktigt god måltid.</p>
+            </div>
+        </div>
+
+<!--2 Intro paragrafer med olika klasser som de tar från style-->
+
+        <img src="Pic/pannkaka.jpg" alt="pannkaka" style="width: 40%; display: block; margin:auto">
+
+<!--bild på pannkakor-->
+
+        <div style="display: flex; gap: 10px; margin: 5px">    
+            <div class="yellow" style="flex:1;">
+                <h2 class="gold">Ingredienser</h2><br>
+                <ul class="gold">
+                    <li>2 ½ dl vetemjöl</li>
+                    <li>6 dl mjölk</li>
+                    <li>3 ägg</li>
+                    <li>½ tsk salt</li>
+                    <li>2 msk smör (smält)</li>
+                    <li>Smör att steka i</li>
+                </ul>
+            </div>
+        
+<!--oordnad lista över ingredienserna-->
+
+            <div class="yellow" style="flex:1;">
+                <h2 class="gold">Steg</h2><br>
+                <ol class="gold">
+                    <li>Vispa ihop mjöl och salt i en bunke.</li>
+                    <li>Tillsätt hälften av mjölken och vispa till en slät smet.</li>
+                    <li>Tillsätt resten av mjölken, ägg och smält smör. Vispa ordentligt.</li>
+                    <li>Hetta upp en stekpanna på medelhög värme och lägg i lite smör.</li>
+                    <li>Häll i lite smet och stek pannkakan tills den får fin färg på båda sidor.</li>
+                    <li>Upprepa tills all smet är slut.</li>
+                </ol>
+            </div>
+        </div>
+
+<!--ordnad lista över stegen-->
+
+        <table border="1" style="padding: 5px; text-align: center; width: 30%; border-collapse: collapse;" align="center">
+            <tr>
+                <th>Ingredienser</th>
+                <th>kalorier/100g</th>
+            </tr>
+
+            <tr>
+                <td>vetemjöl</td>
+                <td>364</td>
+            </tr>
+            
+            <tr>
+                <td>Mjölk</td>
+                <td>42.3</td>
+            </tr>
+
+            <tr>
+                <td>Ägg</td>
+                <td>67</td>
+            </tr>
+
+            <tr>
+                <td>Salt</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td>Smör</td>
+                <td>716.8</td>
+            </tr>
+        </table>
+
+<!--tabell över ingredienserna samt deras kalorier per 100g-->
+
+        <form>
+            <h4>kommentarer</h4>
+
+            <label for="namn">Skriv ditt Namn</label><br>
+            <input type="text" name="Namn" placeholder="Namn"><br><br>
+
+            <label for="kommentar">Skriv din kommentar</label><br>
+            <textarea name="kommentar" rows="4" cols="40" placeholder="kommentar"></textarea><br><br> 
+            
+            <button type="button">Skicka formulär</button>
+        </form>
+
+<!--formulär för kommentarer-->
+
+    </body>
+</html>

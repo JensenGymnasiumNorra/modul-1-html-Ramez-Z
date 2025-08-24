@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snabbnudel soppa</title>
+
+<!--Titel till webbsidan (flik)-->
+
+        <style>
+            .tangerine{
+                background-color: rgb(225, 146, 0); display: inline-block; 
+            }
+            .orange{
+                background-color: rgb(248, 196, 101); padding: 10px;
+            }
+            input[type="submit"]{
+                cursor: pointer;
+                border-radius: 10px;
+                padding: 5px;
+            }
+            input[type="submit"]:hover{
+                background-color: darkgray;
+                font-size: 13px;
+            }
+        </style>
+
+<!-- Stil för hela sidan -->
+
+    </head>
+    <body style="background-color: orange;">
+        
+        <div class="header" style="background-color: rgb(248, 196, 101); height: 60px;" >
+            
+            <h1 align="center">Snabbnudel soppa</h1>
+            
+            <form action="receptsida.html" method="get" align="center" style="margin-top: 30px;">
+                <input type="submit" value="Tillbaka hem">
+            </form>
+            
+        </div>
+        
+<!--Skapade en header samt rubrik-->
+
+        <br>
+
+        <div style="display: flex; gap: 10px; margin: 5px; margin-top: 30px;">
+        
+            <div class="orange" style="flex:1;" align="center">
+                <h2 class="tangerine">Varför just nudelsoppa?</h2>
+                <p class="tangerine">Snabb nudelsoppa är en enkel och värmande rätt som går snabbt att laga. Med färska eller torkade <span style="color: rgb(253, 234, 199);">nudlar</span>, grönsaker och lite kryddor får du en god måltid på bara några minuter. Den är perfekt för stressiga dagar eller när man vill ha något lätt men mättande.</p>
+            </div>
+
+            <div class="orange" style="flex:1;" align="center">
+                <h2 class="tangerine">Hur det har hjälpt mig.</h2>
+                <p class="tangerine">Att laga snabb nudelsoppa har lärt mig att uppskatta snabba och näringsrika måltider. Jag har blivit bättre på att kombinera smaker och grönsaker, och det är en perfekt rätt när tiden är knapp men man ändå vill ha en hemlagad måltid.</p>
+            </div>
+        </div>
+
+<!--2 Intro paragrafer med olika klasser som de tar från style-->
+
+        <img src="Pic/nudel.jpg" alt="Aglio e Olio" style="width: 40%; display: block; margin:auto">
+
+        <div style="display: flex; gap: 10px; margin: 5px">    
+            <div class="orange" style="flex:1;">
+                <h2 class="tangerine">Ingredienser</h2><br>
+                <ul class="tangerine">
+                    <li>200 g snabbnudlar</li>
+                    <li>1 liter vatten</li>
+                    <li>1 grönsaksbuljongtärning</li>
+                    <li>1 morot, skivad</li>
+                    <li>½ zucchini, skivad</li>
+                    <li>1 tsk soja</li>
+                    <li>Färsk koriander eller persilja (valfritt)</li>
+                </ul>
+            </div>
+        
+<!--oordnad lista över ingredienserna-->
+
+            <div class="orange" style="flex:1;">
+                <h2 class="tangerine">Steg</h2><br>
+                
+                <ol class="tangerine">
+                    <li>Koka upp vattnet med buljongtärningen.</li>
+                    <li>Tillsätt morot och zucchini, låt sjuda i 3-4 minuter.</li>
+                    <li>Tillsätt nudlarna och koka enligt förpackningens instruktion.</li>
+                    <li>Smaka av med soja och kryddor.</li>
+                    <li>Toppa med färsk koriander eller persilja och servera direkt.</li>
+                </ol>
+            </div>
+
+<!--ordnad lista över stegen-->
+
+        </div>
+
+        <table border="1" style="padding: 5px; text-align: center; width: 30%; border-collapse: collapse;" align="center">
+            <tr>
+                <th>Ingredienser</th>
+                <th>Kalorier/100g</th>
+            </tr>
+
+            <tr>
+                <td>Nudlar</td>
+                <td>138</td>
+            </tr>
+
+            <tr>
+                <td>Morot</td>
+                <td>41</td>
+            </tr>
+
+            <tr>
+                <td>Zucchini</td>
+                <td>17</td>
+            </tr>
+
+            <tr>
+                <td>Soja</td>
+                <td>53</td>
+            </tr>
+
+            <tr>
+                <td>Grönsaksbuljong</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>Koriander/persilja</td>
+                <td>23</td>
+            </tr>
+        </table>
+
+<!--tabell över ingredienserna samt deras kalorier per 100g-->
+
+        <form>
+            <h3>Kommentarer</h3>
+
+            <label for="namn">Skriv ditt Namn</label><br>
+            <input type="text" name="Namn" placeholder="Namn"><br><br>
+
+            <label for="kommentar">Skriv din kommentar</label><br>
+            <textarea name="kommentar" rows="4" cols="40" placeholder="kommentar"></textarea><br><br> 
+            
+            <button type="button">Skicka formulär</button>
+        </form>
+
+<!--formulär för kommentarer-->
+
+    </body>
+</html>

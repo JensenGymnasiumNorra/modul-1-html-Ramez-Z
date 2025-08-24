@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aglio e Olio</title>
+
+<!--Titel till webbsidan (flik)-->
+
+        <style>
+            .olive{
+                background-color: rgb(107, 246, 107); display: inline-block; 
+            }
+            .green{
+                background-color: rgb(197, 255, 197); padding: 10px;
+            }
+            input[type="submit"]{
+                cursor: pointer;
+                border-radius: 10px;
+                padding: 5px;
+            }
+            input[type="submit"]:hover{
+                background-color: darkgray;
+                font-size: 13px;
+            }
+        </style>
+
+<!-- Stil för hela sidan -->
+
+    </head>
+    <body style="background-color: lightgreen;">
+        
+        <div class="header" style="background-color: rgb(197, 255, 197); height: 60px;" >
+            
+            <h1 align="center">Aglio e Olio</h1>
+            
+            <form action="receptsida.html" method="get" align="center" style="margin-top: 30px;">
+                <input type="submit" value="Tillbaka hem">
+            </form>
+            
+        </div>
+        
+<!--Skapade en header samt rubrik-->
+
+        <br>
+
+        <div style="display: flex; gap: 10px; margin: 5px; margin-top: 30px;">
+        
+            <div class="green" style="flex:1;" align="center">
+                <h2 class="olive">Vad är Aglio e Olio</h2>
+                <p class="olive">Aglio e Olio är en klassisk <span style="background-color: green;">ita</span><span style="background-color: white;">lie</span><span style="background-color: red;">nsk</span> pastarätt som betyder ”vitlök och olja”. Den är enkel, snabb och görs med få ingredienser pasta, vitlök, olivolja, chili och persilja. Trots sin enkelhet är smaken fantastisk och den visar hur god mat kan vara utan krångel.</p>
+            </div>
+
+            <div class="green" style="flex:1;" align="center">
+                <h2 class="olive">Hur det har hjälpt mig.</h2>
+                <p class="olive">Att laga Aglio e Olio har lärt mig att uppskatta enkelheten i matlagning. Jag har blivit bättre på att använda råvaror på rätt sätt och förstå hur små detaljer som att rosta vitlöken lagom kan förändra smaken helt. Det är också en perfekt rätt när man har lite tid men ändå vill äta gott.</p>
+            </div>
+        </div>
+
+<!--2 Intro paragrafer med olika klasser som de tar från style-->
+
+        <img src="Pic/aglio.jpg" alt="Aglio e Olio" style="width: 40%; display: block; margin:auto">
+
+        <div style="display: flex; gap: 10px; margin: 5px">    
+            <div class="green" style="flex:1;">
+                <h2 class="olive">Ingredienser</h2><br>
+                <ul class="olive">
+                    <li>200 g spaghetti</li>
+                    <li>3 vitlöksklyftor</li>
+                    <li>½ dl olivolja</li>
+                    <li>1 tsk chiliflakes</li>
+                    <li>Persilja (färsk, hackad)</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+        
+<!--oordnad lista över ingredienserna-->
+
+            <div class="green" style="flex:1;">
+                <h2 class="olive">Steg</h2><br>
+                <ol class="olive">
+                    <li>Koka pastan i saltat vatten.</li>
+                    <li>Fräs skivad vitlök i olivolja tills den blir gyllene.</li>
+                    <li>Tillsätt chiliflakes.</li>
+                    <li>Blanda i pastan med lite av pastavattnet.</li>
+                    <li>Toppa med persilja och servera direkt.</li>
+                </ol>
+            </div>
+        </div>
+
+<!--ordnad lista över stegen-->
+
+        <table border="1" style="padding: 5px; text-align: center; width: 30%; border-collapse: collapse;" align="center">
+            <tr>
+                <th>Ingredienser</th>
+                <th>kalorier/100g</th>
+            </tr>
+
+            <tr>
+                <td>Spaghetti</td>
+                <td>157.7</td>
+            </tr>
+            
+            <tr>
+                <td>vitlök</td>
+                <td>108</td>
+            </tr>
+
+            <tr>
+                <td>olivolja</td>
+                <td>884</td>
+            </tr>
+
+            <tr>
+                <td>chiliflakes</td>
+                <td>376</td>
+            </tr>
+
+            <tr>
+                <td>persilja</td>
+                <td>36</td>
+            </tr>
+
+            <tr>
+                <td>Salt</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+<!--tabell över ingredienserna samt deras kalorier per 100g-->
+
+        <form>
+            <h4>kommentarer</h4>
+
+            <label for="namn">Skriv ditt Namn</label><br>
+            <input type="text" name="Namn" placeholder="Namn"><br><br>
+
+            <label for="kommentar">Skriv din kommentar</label><br>
+            <textarea name="kommentar" rows="4" cols="40" placeholder="kommentar"></textarea><br><br> 
+            
+            <button type="button">Skicka formulär</button>
+        </form>
+
+<!--formulär för kommentarer-->
+
+    </body>
+</html>
